@@ -1,0 +1,132 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('https://th.bing.com/th/id/OIP.b8nHfeYK7lw-bdSuqB14BgHaEK?w=326&h=183&c=7&r=0&o=5&pid=1.7'); /* Replace with background image URL */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Semi-transparent overlay over the body background for added depth */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+  z-index: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background-image: url('https://th.bing.com/th/id/OIP.iD9gsM0RC59KntwNSEzlWAHaEK?w=330&h=185&c=7&r=0&o=5&pid=1.7'); /* Replace with container image URL */
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  /* Centering the container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Light overlay for the container background to improve text readability */
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #66a6ff;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.error-message {
+  color: #ff4d4d;
+  margin-top: 10px;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 36px;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
